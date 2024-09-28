@@ -22,6 +22,8 @@ import SVGCode from "heroicons-0.4.x/solid/Code";
 import SVGFlag from "heroicons-0.4.x/solid/Flag";
 import SVGMoon from "heroicons-0.4.x/solid/Moon";
 import SVGPaperClip from "heroicons-0.4.x/solid/PaperClip";
+import SVGGithub from "heroicons-0.4.x/solid/GitHub";
+import SVGTwitter from "heroicons-0.4.x/solid/Twitter";
 
 import SVGCodeStroke from "heroicons-0.4.x/outline/Code";
 import SVGMoonStroke from "heroicons-0.4.x/outline/Moon";
@@ -361,12 +363,13 @@ const SectionHero = () => (
 								></path>
 							</svg>
 						</a>
-						<div className="w-full text-center text-xs mt-4 text-white">
-							Contribute within seconds. Build by{" "}
+						<div className="w-full text-center text-xs mt-4 mb-1 text-white">
+							Contribute within seconds. Built by{" "}
 							<a
 								href="https://twitter.com/boyney123"
 								target="_blank"
 								rel="noopener"
+								className="underline"
 							>
 								@boyney123
 							</a>
@@ -377,10 +380,28 @@ const SectionHero = () => (
 								href="https://heroicons.dev?ref=awsicons.dev"
 								target="_blank"
 								rel="noopener"
+								className="underline"
 							>
 								{` heroicons.dev`}
 							</a>
 						</div>
+					</div>
+					<div className="lg:hidden flex justify-center items-center gap-2 text-center text-xs mt-6 text-white">
+						<a
+							href="https://github.com/boyney123/awsicons"
+							target="_blank"
+							rel="noopener"
+						>
+							<SVGGithub width="24px"/>
+						</a>
+						<a
+							href="https://twitter.com/intent/tweet?text=Check%20out%20Awsicons!%20%F0%9F%94%A5%0A%0AThanks%20@boyney123%20for%20awsicons.dev!%0A%0Ahttps://awsicons.dev"
+							target="_blank"
+							rel="noopener"
+							className="-mb-1"
+						>
+							<SVGTwitter width="24px"/>
+						</a>
 					</div>
 				</div>
 
